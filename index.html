@@ -4,85 +4,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
     <title>NOVAS Boutique Shop</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-        <header>
-            <nav class="navigation">
-                <img src="logo" alt="NOVAS Logo">
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="./contact.html">Contact Us</a></li>
-                </ul>
-                <img src="shoppingbag" alt="shopping bag icon">
-            </nav> 
+    <header>
+        <nav class="navigation">
+            <img src="/assets/logo-black.png" alt="NOVAS Logo">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+            <img src="./assets/icons/shopping-cart-black-icon.png" alt="shopping bag icon">
+        </nav> 
             <div class="wrapper heroImage">
                 <h1>NOVAS <span style = "display: block;">Boutique <span style = "display: block;">Shop</h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore ut in consequatur deleniti. Laudantium alias velit soluta possimus, reprehenderit voluptatibus natus. Iste odio, sapiente eaque et voluptatum doloremque error ullam?</p>
             </div>
-        </header>
-        <section class="images">
-            <div class="wrapper wrapperPadding">
-                <div class="imageContainer">
-                    <div>
-                        <img src="#" alt="Plants on a table with a green wall">
-                        <p class="absoluteText">- Plants</p>
+    </header>
+    <section class="images">
+        <div class="wrapper wrapperPadding">
+            <div class="imageContainer">
+                <div>
+                    <img src="./assets/cat-1.jpg" alt="Plants on a table with a green wall">
+                    <p class="absoluteText">- Plants</p>
+                </div>
+                <div>
+                    <img src="./assets/cat-2.jpg" alt="Chair with a cushion and plates on a dinner table">
+                    <p class="absoluteText">- Furniture</p>
+                </div>
+                <div>
+                    <img src="./assets/cat-3.jpg" alt="oval mirror hanging on a wall">
+                    <p class="absoluteText">- Decoration</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="featuredSale wrapper">
+        <h2>featured sale</h2>
+            
+        <div class="itemList">
+            <div class="itemCard">
+                <div class="itemImage">
+                    <p class="saleTag">SALE</p>
+                    <img src="./assets/prod-1.jpg" alt="modern chair with wood handles and green cushion">
+                </div>
+    
+                <div class="label">
+                    <div class="details">
+                        <p class="itemName"> Malm Chair </p>
+                        <p class="price"> <span class="line">$35</span> $22</p>
                     </div>
-                    <div>
-                        <img src="#" alt="Chair with a cushion and plates on a dinner table">
-                        <p class="absoluteText">- Furniture</p>
-                    </div>
-                    <div>
-                        <img src="#" alt="oval mirror hanging on a wall">
-                        <p class="absoluteText">- Decoration</p>
+                    <div class="icon">
+                        <img src="./assets/icons/shopping-cart-black-icon.png" alt="shopping bag icon">
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="featuredSale wrapper">
-            <h2>featured sale</h2>
-            
-            <div class="itemList">
-                <div class="itemCard">
-                    <div class="itemImage">
-                        <p class="saleTag">sale</p>
-                        <img src="#" alt="modern chair with wood handles and green cushion">
-                    </div>
-    
-                    <div class="label">
-                        <div class="details">
-                            <p class="itemName"> Malm Chair </p>
-                            <p class="price"> <span class="line">$35</span> $22</p>
-                        </div>
-                        <div class="icon">
-                            <img src="#" alt="shopping bag icon">
-                        </div>
-                    </div>
-                </div>
 
-                <div class="itemCard">
-                    <div class="itemImage">
-                        <p class="hide">SALE</p>
-                        <img src="#" alt="modern desk with wooden legs and green tabletop">
-                    </div>
+            <div class="itemCard">
+                <div class="itemImage">
+                    <p class="hide">sale</p>
+                    <img src="./assets/prod-2.jpg" alt="modern desk with wooden legs and green tabletop">
+                </div>
     
-                    <div class="label">
-                        <div class="details">
-                            <p class="item"> Pendant Lamp </p>
-                            <p class="price"> $45</p>
-                        </div>
-                        <div class="icon">
-                            <img src="#" alt="shopping bag icon">
-                        </div>
+                <div class="label">
+                    <div class="details">
+                        <p class="item"> Pendant Lamp </p>
+                        <p class="price"> $45</p>
+                    </div>
+                    <div class="icon">
+                        <img src="./assets/icons/shopping-cart-black-icon.png" alt="shopping bag icon">
                     </div>
                 </div>
+            </div>
 
                 <div class="itemCard">
                     <div class="itemImage">
                         <p class="newTag">NEW</p>
-                        <img src="#" alt="circular wooden stool wrapped in cloth with 3 wooden legs">
+                        <img src="./assets/prod-3.jpg" alt="circular wooden stool wrapped in cloth with 3 wooden legs">
                     </div>
             
                      <div class="label">
@@ -91,7 +94,7 @@
                             <p class="price"> $18</p>
                         </div>
                         <div class="icon">
-                            <img src="#" alt="shopping bag icon">
+                            <img src="./assets/icons/shopping-cart-black-icon.png" alt="shopping bag icon">
                         </div>
                     </div>
                 </div>
@@ -99,7 +102,7 @@
                 <div class="itemCard">
                     <div class="itemImage">
                         <p class="hide">sale</p>
-                        <img src="#" alt="modern chair with wood handles and green cushion">
+                        <img src="./assets/prod-4.jpg" alt="modern chair with wood handles and green cushion">
                     </div>
     
                     <div class="label">
@@ -108,7 +111,7 @@
                             <p class="price"> $45</p>
                         </div>
                         <div class="icon">
-                            <img src="#" alt="shopping bag icon">
+                            <img src="./assets/icons/shopping-cart-black-icon.png" alt="shopping bag icon">
                         </div>
                     </div>
                 </div>
@@ -116,7 +119,7 @@
                 <div class="itemCard">
                     <div class="itemImage">
                         <p class="hide">sale</p>
-                        <img src="#" alt="blue and gold ceiling lamp">
+                        <img src="./assets/prod-5.jpg" alt="blue and gold ceiling lamp">
                     </div>
     
                     <div class="label">
@@ -125,7 +128,7 @@
                             <p class="price">$45</p>
                         </div>
                         <div class="icon">
-                            <img src="#" alt="shopping bag icon">
+                            <img src="./assets/icons/shopping-cart-black-icon.png" alt="shopping bag icon">
                         </div>
                     </div>
                 </div>
@@ -133,7 +136,7 @@
                 <div class="itemCard">
                     <div class="itemImage">
                         <p class="hide">sale</p>
-                        <img src="#" alt="white pillow with black parallelograms design">
+                        <img src="./assets/prod-6.jpg" alt="white pillow with black parallelograms design">
                     </div>
     
                     <div class="label">
@@ -142,7 +145,7 @@
                             <p class="price"> $45 </p>
                         </div>
                         <div class="icon">
-                            <img src="#" alt="shopping bag icon">
+                            <img src="./assets/icons/shopping-cart-black-icon.png" alt="shopping bag icon">
                         </div>
                     </div>
                 </div>
@@ -150,7 +153,7 @@
                 <div class="itemCard">
                     <div class="itemImage">
                         <p class="hide">sale</p>
-                        <img src="#" alt="colorful patterned blanket">
+                        <img src="./assets/prod-7.jpg" alt="colorful patterned blanket">
                     </div>
     
                     <div class="label">
@@ -159,7 +162,7 @@
                             <p class="price"> $45 </p>
                         </div>
                         <div class="icon">
-                            <img src="#" alt="shopping bag icon">
+                            <img src="./assets/icons/shopping-cart-black-icon.png" alt="shopping bag icon">
                         </div>
                     </div>
                 </div>
@@ -167,7 +170,7 @@
                 <div class="itemCard">
                     <div class="itemImage">
                         <p class="hide">sale</p>
-                        <img src="#" alt="cartoon elephant stool with two wooden legs">
+                        <img src="./assets/prod-8.jpg" alt="cartoon elephant stool with two wooden legs">
                     </div>
     
                     <div class="label">
@@ -176,7 +179,7 @@
                             <p class="price"> $45 </p>
                         </div>
                         <div class="icon">
-                            <img src="#" alt="shopping bag icon">
+                            <img src="./assets/icons/shopping-cart-black-icon.png" alt="shopping bag icon">
                         </div>
                     </div>
                 </div>
@@ -184,7 +187,7 @@
                 <div class="itemCard">
                     <div class="itemImage">
                         <p class="hide">sale</p>
-                        <img src="#" alt="pink candle with dark green logo">
+                        <img src="./assets/prod-9.jpg" alt="pink candle with dark green logo">
                     </div>
     
                     <div class="label">
@@ -193,7 +196,7 @@
                             <p class="price"> $45 </p>
                         </div>
                         <div class="icon">
-                            <img src="#" alt="shopping bag icon">
+                            <img src="./assets/icons/shopping-cart-black-icon.png" alt="shopping bag icon">
                         </div>
                     </div>
                 </div>
@@ -201,7 +204,7 @@
                 <div class="itemCard">
                     <div class="itemImage">
                         <p class="hide">sale</p>
-                        <img src="#" alt="light bulb with plant decoration inside">
+                        <img src="./assets/prod-10.jpg" alt="light bulb with plant decoration inside">
                     </div>
     
                     <div class="label">
@@ -210,7 +213,7 @@
                             <p class="price"> $45 </p>
                         </div>
                         <div class="icon">
-                            <img src="#" alt="shopping bag icon">
+                            <img src="./assets/icons/shopping-cart-black-icon.png" alt="shopping bag icon">
                         </div>
                     </div>
                 </div>
@@ -221,7 +224,7 @@
             <div class="wrapper wrapperPadding">
                 <div class="dealContainer">
                     <div><a href="#">
-                        <img src="#" alt="Living room with white sofa and vase on coffee table">
+                        <img src="./assets/vert1.jpg" alt="Living room with white sofa and vase on coffee table">
                         <div class="absoluteTextTwo">
                             <p>SALE UP TO</p>
                             <p>50% OFF</p>
@@ -230,7 +233,7 @@
                         </a>
                     </div>
                     <div><a href="#">
-                        <img src="#" alt="Brown two seat sofa ">
+                        <img src="./assets/vert2.jpg" alt="Brown two seat sofa in open room">
                         <div class="absoluteTextThree">
                             <!-- change color to black -->
                             <p>Get 30% Off</p>
@@ -244,23 +247,55 @@
 
         <section class="instagram">
             <div class="wrapper wrapperPadding">
-                <h2>Follow Instagram</h2>
-                <a href="#">@Novas_shop</a>
-            </div>
-
-            <div class="instagramImages">
-                <ul>
-                    <li><img src="#" alt="Full size cabinet in living room filled with glasses"></li>
-                    <li><img src="#" alt="Mirror with a relection of a plant"></li>
-                    <li><img src="#" alt="White shelves and countertop holding vases and a brown bench"></li>
-                    <li><img src="#" alt="Green plant near the window"></li>
-                    <li><img src="#" alt="Chairs in dining room setting"></li>
-                </ul>
+                <div class="follow">
+                    <h2>Follow Instagram</h2>
+                    <a href="#">@Novas_shop</a>
+                </div>
+                <div class="instagramImages">
+                    <ul>
+                        <li><img src="./assets/ig4.jpg" alt="Full size cabinet in living room filled with glasses"></li>
+                        <li><img src="./assets/ig1.jpg" alt="Mirror with a relection of a plant"></li>
+                        <li><img src="./assets/ig2.jpg" alt="White shelves and countertop holding vases and a brown bench"></li>
+                        <li><img src="./assets/ig3.jpg" alt="Green plant near the window"></li>
+                        <li><img src="./assets/ig5.jpg" alt="Chairs in dining room setting"></li>
+                    </ul>
+                </div>
             </div>
         </section>
-        
+    
         <footer>
-
+            <div class="footer">
+                <ul class="company">
+                    <li><img src="./assets/logo-white.png" alt="logo"></li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex laboriosam voluptatibus recusandae?</li>
+                    <div class="icons">
+                        <img src="./assets/icons/facebook.svg" width="25px" height="25px" alt="facebook logo">
+                        <img src="./assets/icons/twitter.svg" width="25px" height="25px" alt="twitter logo">
+                        <img src="./assets/icons/instagram.svg" width="25px" height="25px" alt="instagram logo">
+                    </div>
+                </ul>
+                <ul class="contactUs">
+                    <h3> Contact </h3>
+                    <li><img src="./assets/icons/address.svg" width="25px" height="25px" alt="home icon"> No 40 Baria Street</li>
+                    <li><img src="./assets/icons/telephone.svg" width="25px" height="25px" alt="cell icon"> 156-366-6666</li>
+                    <li><img src="./assets/icons/email.svg" width="25px" height="25px" alt="email icon"> cool@example.com</li>
+                    <li><img src="./assets/icons/globe.svg" width="25px" height="25px" alt="globe icon"><a href="www.novas.com"> www.novas.com</a></li>
+                </ul>
+                <ul class="profile">
+                    <h3> Contact </h3>
+                    <li><img src="./assets/icons/user.svg" width="25px" height="25px" alt="profile icon"> My Account</li>
+                    <li><img src="./assets/icons/checkout.svg" width="25px" height="25px" alt="cart icon"> Checkout</li>
+                    <li><img src="./assets/icons/tracking.svg" width="25px" height="25px" alt="eye icon"> Order Tracking</li>
+                    <li><img src="./assets/icons/support.svg" width="25px" height="25px" alt="information icon"> Help % Support</li>
+                </ul>
+                <ul class="newsletter">
+                    <h3>Newsletter</h3>
+                    <li>Subscribe to our newsletter</li>
+                    <li><label for="email"></label>
+                    <input type="text" id="email" name="email" required="true" placeholder="Your e-mail..."></li>
+                    <li>@ 2023 Novas.</li>
+                </ul>
+            </div>
         </footer>
     </body>
 </html>
