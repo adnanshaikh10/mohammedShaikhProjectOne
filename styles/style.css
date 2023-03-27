@@ -227,6 +227,7 @@ html {
 }
 
 html {
+  font-family: "Poppins", sans-serif;
   font-size: 20px;
   color: black;
 }
@@ -243,11 +244,119 @@ img {
 
 a {
   text-decoration: none;
-  color: #666;
+  color: #000;
 }
 
 .wrapper {
   max-width: 1920px;
   margin: 0 auto;
-  width: 80%;
+  width: 60%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+nav {
+  height: 8vh;
+  font-size: 0.8rem;
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 25px 100px;
+}
+
+.navigation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.navigation ul a {
+  text-transform: uppercase;
+}
+
+.navigation li {
+  padding: 0 20px;
+}
+
+.navigation a:hover {
+  text-decoration: underline;
+}
+
+.heroImage {
+  background-image: url(../assets/home.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 97vh;
+  width: 100%;
+}
+
+.wrapperOne {
+  width: 40%;
+  padding-left: 400px;
+}
+
+.heroImage .wrapperOne {
+  min-height: calc(100vh - 74px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.heroImage .wrapperOne h1 {
+  color: #333;
+  font-weight: 500;
+  font-size: 3.2rem;
+}
+
+.heroImage .wrapperOne p {
+  color: #666;
+  font-size: 0.9rem;
+  padding-top: 10px;
+}
+
+footer {
+  color: #fff;
+  background-color: #333;
+  padding: 100px 50px;
+  font-size: 16px;
+}
+
+footer a {
+  color: #fff;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .company,
+footer .contactUs,
+footer .profile,
+footer .newsletter {
+  padding: 0px 50px;
 }

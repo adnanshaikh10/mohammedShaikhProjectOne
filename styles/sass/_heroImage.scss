@@ -1,0 +1,31 @@
+.heroImage {
+    background-image: url(../assets/home.jpg);
+    background-size: cover;
+	background-repeat: no-repeat;
+	height: 97vh;
+    width: 100%;
+}
+
+.wrapperOne {
+    width: 40%;
+    padding-left: 400px;
+}
+
+.heroImage .wrapperOne {
+    min-height: calc(100vh - 74px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.heroImage .wrapperOne h1 {
+    color: #333;
+    font-weight: 500;
+    font-size: 3.2rem;
+}
+
+.heroImage .wrapperOne p {
+    color: #666;
+    font-size: 0.9rem;
+    padding-top: 10px;
+}

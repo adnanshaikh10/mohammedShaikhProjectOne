@@ -1,0 +1,23 @@
+footer {
+    color: #fff;
+    background-color: #333;
+    padding: 100px 50px;
+    font-size: 16px;
+}
+
+footer a {
+    color: #fff;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .company,
+footer .contactUs,
+footer .profile,
+footer .newsletter {
+    padding: 0px 50px;
+}

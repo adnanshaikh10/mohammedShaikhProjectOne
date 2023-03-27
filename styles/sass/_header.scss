@@ -1,0 +1,27 @@
+nav {
+    height: 8vh;
+    font-size: 0.8rem;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 100px;
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navigation ul a {
+    text-transform: uppercase;
+}
+
+.navigation li {
+    padding: 0 20px;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}

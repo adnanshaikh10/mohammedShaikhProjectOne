@@ -7,23 +7,32 @@ html { box-sizing: border-box;}
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
 html {
+    font-family: 'Poppins', sans-serif;
     font-size: 20px;
-    color: black;}
+    color: black;
+}
 
 h1,h2,p,h3,ul li,button,ul {
     margin: 0;
     padding: 0;
 }
+
 img {
     max-width: 100%;
     height: auto;    
 }
+
 a {
     text-decoration: none;
-    color: #666;
+    color: #000;
 }
+
 .wrapper {
     max-width: 1920px;
     margin: 0 auto;
-    width: 80%;
+    width: 60%;
 } 
+
+ul {
+    list-style-type: none;
+}
