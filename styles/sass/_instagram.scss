@@ -1,0 +1,28 @@
+.instagram {
+height: 45vh;
+}
+
+.follow {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.instagramImages ul {
+    display: flex;
+}
+
+.follow h2 {
+    font-weight: 500;
+    font-size: 1.9rem;
+    color: #333;
+    padding-bottom: 15px;
+}
+
+.follow a {
+    color: #666;
+    font-size: 0.7rem;
+}
+
+.instagramImages img {
+    width: 90%;
+}
