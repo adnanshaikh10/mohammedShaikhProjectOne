@@ -250,7 +250,7 @@ a {
 .wrapper {
   max-width: 1920px;
   margin: 0 auto;
-  width: 60%;
+  width: 70%;
 }
 
 ul {
@@ -331,11 +331,138 @@ nav {
   padding-top: 10px;
 }
 
+.heroImageContact {
+  background-image: url(../assets/contact-us.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 35vh;
+  width: 100%;
+}
+
+.heroImageContact .wrapperPadding h1 {
+  color: #333;
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+
+.heroImageContact .wrapperPadding {
+  min-height: calc(35vh - 74px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 60%;
+}
+
+.instagram {
+  height: 45vh;
+}
+
+.follow {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.instagramImages ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.follow h2 {
+  font-weight: 500;
+  font-size: 1.9rem;
+  color: #333;
+  padding-bottom: 15px;
+}
+
+.follow a {
+  color: #666;
+  font-size: 0.7rem;
+}
+
+.instagramImages img {
+  width: 90%;
+}
+
+.form {
+  height: 60vh;
+}
+
+fieldset {
+  border: none;
+  height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+textarea {
+  height: 80px;
+}
+
+input, textarea {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: black 1px solid;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 40%;
+}
+
+button {
+  background-color: #fff;
+  padding: 10px 5px;
+  border: black 1px solid;
+  margin: 50px auto;
+  min-width: 150px;
+}
+
+input {
+  width: 100%;
+  padding: 14px 13px;
+}
+
+label {
+  height: 20px;
+}
+
+.contact .messageTwo {
+  padding-left: 10px;
+}
+
+.form .wrapperPadding {
+  width: 60%;
+}
+
 footer {
   color: #fff;
   background-color: #333;
   padding: 100px 50px;
   font-size: 16px;
+}
+
+footer ul {
+  width: 25%;
+  height: 100%;
 }
 
 footer a {
@@ -354,9 +481,58 @@ footer a {
           align-items: center;
 }
 
+footer li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px 5px;
+}
+
+footer h3 {
+  padding: 35px 10px;
+}
+
+footer img {
+  padding: 0 5px;
+}
+
 footer .company,
 footer .contactUs,
 footer .profile,
 footer .newsletter {
   padding: 0px 50px;
+}
+
+footer .newsletter h3 {
+  padding: 25px 5px;
+}
+
+footer .wrap {
+  white-space: nowrap;
+}
+
+footer .icons {
+  margin-top: 10px;
+}
+
+footer input {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  background-color: #333;
+  width: 200px;
+  border-bottom: white 1px solid;
+}
+
+.message {
+  color: #fff;
+  padding: 10px 5px;
+}
+
+footer .logo {
+  margin-top: 35px;
+}
+
+footer .about {
+  margin-top: 25px;
 }

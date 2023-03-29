@@ -29,3 +29,27 @@
     font-size: 0.9rem;
     padding-top: 10px;
 }
+
+// Contact page //
+
+.heroImageContact {
+    background-image: url(../assets/contact-us.jpg);    
+    background-size: cover;
+	background-repeat: no-repeat;
+	height: 35vh;
+    width: 100%;
+}
+
+.heroImageContact .wrapperPadding h1 {
+    color: #333;
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+
+.heroImageContact .wrapperPadding {
+    min-height: calc(35vh - 74px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+}
