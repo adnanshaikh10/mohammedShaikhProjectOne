@@ -1,3 +1,5 @@
+@use "variables";
+
 .instagram {
 height: 45vh;
 }
@@ -14,12 +16,12 @@ height: 45vh;
 .follow h2 {
     font-weight: 500;
     font-size: 1.9rem;
-    color: #333;
+    color: variables.$firstColor;
     padding-bottom: 15px;
 }
 
 .follow a {
-    color: #666;
+    color: variables.$fourthColor;
     font-size: 0.7rem;
 }
 
