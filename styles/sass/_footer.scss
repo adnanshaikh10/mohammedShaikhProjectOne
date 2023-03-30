@@ -1,6 +1,8 @@
+@use "variables";
+
 footer {
-    color: #fff;
-    background-color: #333;
+    color: variables.$secondColor;
+    background-color: variables.$firstColor;
     padding: 100px 50px;
     font-size: 16px;
 }
@@ -11,7 +13,7 @@ footer ul {
 }
 
 footer a {
-    color: #fff;
+    color: variables.$secondColor;
 }
 
 .footer {
@@ -56,13 +58,13 @@ footer input {
     border-top: none;
     border-right: none;
     border-left: none;
-    background-color: #333;
+    background-color: variables.$firstColor;
     width: 200px;
-    border-bottom: white 1px solid;
+    border-bottom: variables.$secondColor 1px solid;
 }
 
 .message {
-    color: #fff;
+    color: variables.$secondColor;
     padding: 10px 5px;
 }
 
