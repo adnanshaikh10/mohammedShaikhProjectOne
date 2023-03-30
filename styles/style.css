@@ -68,7 +68,7 @@ dfn {
 
 mark {
   background-color: #ff0;
-  color: #000;
+  color: #000000;
 }
 
 small {
@@ -229,7 +229,7 @@ html {
 html {
   font-family: "Poppins", sans-serif;
   font-size: 20px;
-  color: black;
+  color: #000000;
 }
 
 h1, h2, p, h3, ul li, button, ul {
@@ -244,13 +244,19 @@ img {
 
 a {
   text-decoration: none;
-  color: #000;
+  color: #000000;
 }
 
 .wrapper {
   max-width: 1920px;
   margin: 0 auto;
   width: 70%;
+}
+
+.wrapperPadding {
+  max-width: 1920px;
+  margin: 0 auto;
+  width: 60%;
 }
 
 ul {
@@ -288,8 +294,20 @@ nav {
   padding: 0 20px;
 }
 
-.navigation a:hover {
-  text-decoration: underline;
+nav a:hover {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: #000000;
+  position: relative;
+}
+
+nav a:hover:after {
+  content: "";
+  position: absolute;
+  width: 65%;
+  bottom: 0;
+  left: 0%;
+  border-bottom: 3px solid #000000;
 }
 
 .heroImage {
@@ -301,8 +319,8 @@ nav {
 }
 
 .wrapperOne {
-  width: 40%;
-  padding-left: 400px;
+  width: 35%;
+  padding-left: 350px;
 }
 
 .heroImage .wrapperOne {
@@ -320,14 +338,14 @@ nav {
 }
 
 .heroImage .wrapperOne h1 {
-  color: #333;
+  color: #333333;
   font-weight: 500;
   font-size: 3.2rem;
 }
 
 .heroImage .wrapperOne p {
-  color: #666;
-  font-size: 0.9rem;
+  color: #666666;
+  font-size: 0.8rem;
   padding-top: 10px;
 }
 
@@ -340,7 +358,7 @@ nav {
 }
 
 .heroImageContact .wrapperPadding h1 {
-  color: #333;
+  color: #333333;
   font-weight: 500;
   font-size: 2.5rem;
 }
@@ -358,6 +376,253 @@ nav {
       -ms-flex-pack: center;
           justify-content: center;
   width: 60%;
+}
+
+.itemList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.hide {
+  display: none;
+}
+
+.itemCard,
+.itemImage,
+.label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.itemImage {
+  padding-top: 40px;
+}
+
+.itemCard {
+  width: 18%;
+  position: relative;
+  border: 1px #666666 solid;
+  margin: 10px 10px;
+}
+
+.itemCard img {
+  position: relative;
+}
+
+.saleTag,
+.hide,
+.newTag {
+  position: absolute;
+  z-index: 1;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  top: 5%;
+  padding: 5px;
+  line-height: 0.9;
+}
+
+.label {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 15px;
+}
+
+.itemList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.icon img {
+  border: #666666 1px solid;
+  padding: 1px;
+  margin-right: 20px;
+}
+
+.price {
+  color: #666666;
+  font-size: 0.75rem;
+  padding: 10px 0;
+}
+
+.item {
+  font-size: 0.9rem;
+}
+
+.line {
+  text-decoration: line-through;
+}
+
+.saleTag {
+  background: #eba6aa;
+}
+
+.newTag {
+  background: #88cce2;
+}
+
+.featuredSale {
+  font-size: 2rem;
+  text-align: center;
+  text-transform: capitalize;
+  color: #333333;
+  padding-bottom: 10px;
+  position: relative;
+  font-weight: 500;
+  margin: 50px 0;
+}
+
+.featuredSale:before {
+  content: "";
+  position: absolute;
+  width: 5%;
+  bottom: 0;
+  left: 48%;
+  border-bottom: 3px solid #333333;
+}
+
+.imageContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.images {
+  height: 90vh;
+}
+
+.imageContainer img,
+.dealContainer img {
+  width: 90%;
+  height: 100%;
+}
+
+.imageContainer .imageSize {
+  width: 340px;
+}
+
+.images .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 90vh;
+}
+
+.plants,
+.decoration,
+.furniture {
+  position: relative;
+  padding: 0 10px;
+}
+
+.absoluteText {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #ffffff;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.plants {
+  margin-top: 40px;
+}
+
+.decoration {
+  margin-top: 40px;
+}
+
+.deals {
+  height: 80vh;
+}
+
+.dealContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 6%;
+}
+
+.dealOne,
+.dealTwo {
+  position: relative;
+}
+
+.absoluteTextTwo a,
+.absoluteTextThree a {
+  text-align: center;
+  position: absolute;
+}
+
+.absoluteTextTwo a {
+  bottom: 7%;
+  right: 33%;
+  color: #ffffff;
+}
+
+.absoluteTextThree a {
+  top: 10%;
+  right: 30%;
+  color: #000000;
+  font-size: 1.3rem;
+  border: 1px #000000 solid;
+  padding: 15px 25px;
+}
+
+.font {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.absoluteTextThree p {
+  padding: 5px 0;
+}
+
+.absoluteTextTwo p {
+  padding: 15px 0;
+}
+
+.sale {
+  background: #ffffff;
+  color: #BE8564;
+  text-transform: uppercase;
+  padding: 0 10px;
+}
+
+.shop {
+  font-size: 0.8rem;
+  padding-top: 20px;
 }
 
 .instagram {
@@ -378,12 +643,12 @@ nav {
 .follow h2 {
   font-weight: 500;
   font-size: 1.9rem;
-  color: #333;
+  color: #333333;
   padding-bottom: 15px;
 }
 
 .follow a {
-  color: #666;
+  color: #666666;
   font-size: 0.7rem;
 }
 
@@ -414,7 +679,7 @@ input, textarea {
   border-top: none;
   border-right: none;
   border-left: none;
-  border-bottom: black 1px solid;
+  border-bottom: #000000 1px solid;
 }
 
 .contact {
@@ -429,9 +694,9 @@ input, textarea {
 }
 
 button {
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 10px 5px;
-  border: black 1px solid;
+  border: #000000 1px solid;
   margin: 50px auto;
   min-width: 150px;
 }
@@ -454,8 +719,8 @@ label {
 }
 
 footer {
-  color: #fff;
-  background-color: #333;
+  color: #ffffff;
+  background-color: #333333;
   padding: 100px 50px;
   font-size: 16px;
 }
@@ -466,7 +731,7 @@ footer ul {
 }
 
 footer a {
-  color: #fff;
+  color: #ffffff;
 }
 
 .footer {
@@ -519,13 +784,13 @@ footer input {
   border-top: none;
   border-right: none;
   border-left: none;
-  background-color: #333;
+  background-color: #333333;
   width: 200px;
-  border-bottom: white 1px solid;
+  border-bottom: #ffffff 1px solid;
 }
 
 .message {
-  color: #fff;
+  color: #ffffff;
   padding: 10px 5px;
 }
 
