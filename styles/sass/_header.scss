@@ -1,7 +1,7 @@
 @use "variables";
 
 nav {
-    height: 8vh;
+    height: 100%;
     font-size: 0.8rem;
 }
 
@@ -46,6 +46,7 @@ nav a:hover:after {
 
     .navigation {
         margin-left: -50px;
+        align-items: center;
     }
 
     .navigation img {
