@@ -1,0 +1,144 @@
+@use "variables";
+
+.itemList {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hide {
+    display: none;
+}
+
+.itemCard,
+.itemImage,
+.label {
+    display: flex;
+}
+
+.itemImage {
+    padding-top: 40px;
+    margin: 0 auto;
+}
+
+.itemCard {
+    width: 18%;
+    position: relative;
+    // changed color to make it darker
+    border: 1px variables.$fourthColor solid;
+    margin: 10px 10px;
+}
+
+.itemCard img {
+    position: relative;
+}
+
+.saleTag,
+.hide,
+.newTag {
+    position: absolute;
+    z-index: 1;
+    color: variables.$secondColor;
+    text-transform: uppercase;
+    font-size: .8rem;
+    top: 5%;
+    padding: 5px;
+    line-height: 0.9;
+}
+
+.label {
+    position: absolute;
+    z-index: 1; 
+    bottom: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15px;
+    font-weight: 500;
+}
+.itemList {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.icon img {
+    border: variables.$fourthColor 1px solid;
+    padding: 1px;
+    margin-right: 20px;
+}
+
+.price {
+    color: variables.$fourthColor;
+    font-size: 0.75rem;
+    padding: 10px 0;
+}
+
+.item {
+    font-size: 0.9rem;
+}
+
+.line {
+    text-decoration: line-through;
+}
+
+.saleTag {
+    background: variables.$saleColor;
+}
+
+.newTag {
+    background: variables.$newColor;
+}
+
+.featuredSale {
+    font-size: 2rem;
+    text-align: center;
+    text-transform: capitalize;
+    color: variables.$firstColor;
+    padding-bottom: 10px;
+    position: relative;
+    font-weight: 500;
+    margin: 50px 0;
+}
+.featuredSale:before {
+    content: "";
+    position: absolute;
+    width: 5%;
+    bottom: 0;
+    left: 48%;
+    border-bottom: 3px solid variables.$firstColor;
+}
+
+
+@media (max-width: 1125px) {
+    .hideThree{
+        display: none;
+    }
+
+    .itemCard{
+        width: 20%;
+    }
+
+    
+}
+
+@media (max-width: 1500px) {
+    .itemList {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .itemCard {
+       width: 60%;
+    }
+}
+
+@media (max-width: 600px) {
+    .itemCard {
+       width: 70%;
+    }
+}
+
+@media (max-width: 380px) {
+    .itemCard {
+       width: 90%;
+    }
+}
