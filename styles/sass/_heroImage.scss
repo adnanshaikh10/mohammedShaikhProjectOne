@@ -4,6 +4,7 @@
     background-image: url(../assets/home.jpg);
     background-size: cover;
 	background-repeat: no-repeat;
+    background-position: center;
 	height: 97vh;
     width: 100%;
 }
@@ -37,6 +38,7 @@
 .heroImageContact {
     background-image: url(../assets/contact-us.jpg);    
     background-size: cover;
+    background-position: center;
 	background-repeat: no-repeat;
 	height: 35vh;
     width: 100%;
@@ -54,4 +56,26 @@
     flex-direction: column;
     justify-content: center;
     width: 60%;
+}
+
+@media (max-width:655px) {
+    .heroImageContact {
+        background-position-x: -1000px;
+    }
+
+    .heroImage {
+        background-position-x: -600;
+    }
+}
+
+@media (max-width:1540px) {
+    .heroImage .wrapperOne {
+        padding: 100px 15px;
+        width: 75%;
+        min-height: 0;
+    }
+
+    h1 {
+        font-size: 0.8rem;
+    }
 }

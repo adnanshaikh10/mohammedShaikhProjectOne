@@ -38,3 +38,22 @@ nav a:hover:after {
     left: 0%;
     border-bottom: 3px solid variables.$thirdColor;
 }
+
+@media(max-width: 655px) {
+    .navigation ul {
+    flex-direction: column;
+    }
+
+    .navigation {
+        margin-left: -50px;
+    }
+
+    .navigation img {
+        width: 75px;
+    }
+
+    .navigation .logo {
+        width: 33px;
+    }
+
+}
