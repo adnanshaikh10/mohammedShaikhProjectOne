@@ -41,42 +41,45 @@
     background-size: cover;
     background-position: center;
 	background-repeat: no-repeat;
-	height: 35vh;
+	height: 100%;
     width: 100%;
+    padding: 110px 0;
 }
 
 .heroImageContact .wrapperPadding h1 {
     color: variables.$firstColor;
     font-weight: 500;
     font-size: 2.5rem;
+    text-align: center;
 }
 
 .heroImageContact .wrapperPadding {
-    min-height: calc(35vh - 74px);
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 60%;
 }
 
-@media (max-width:655px) {
-    .heroImageContact {
-        background-position-x: -1000px;
-    }
-
-    .heroImage {
-        background-position-x: -600;
-    }
-}
-
 @media (max-width:1540px) {
     .heroImage .wrapperOne {
         padding: 200px 15px;
-        width: 75%;
+        width: 50%;
         min-height: 0;
     }
 
     h1 {
         font-size: 0.8rem;
+    }
+}
+
+@media (max-width:655px) {
+    .heroImageContact {
+        background-position-x: -1000px;
+        min-height: 0;
+    }
+
+    .heroImage {
+        background-position-x: -600;
     }
 }

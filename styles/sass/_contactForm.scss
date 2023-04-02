@@ -1,13 +1,14 @@
 @use "variables";
 
 .form {
-    height: 60vh;
+    height: 100%;
 }
 
 fieldset {
     border: none;
-    height: 60vh;
+    height: 100%;
     display: flex;
+    padding: 65px 0;
     align-items: center;
 }
 

@@ -376,18 +376,20 @@ nav a:hover:after {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 35vh;
+  height: 100%;
   width: 100%;
+  padding: 110px 0;
 }
 
 .heroImageContact .wrapperPadding h1 {
   color: #333333;
   font-weight: 500;
   font-size: 2.5rem;
+  text-align: center;
 }
 
 .heroImageContact .wrapperPadding {
-  min-height: calc(35vh - 74px);
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -401,22 +403,23 @@ nav a:hover:after {
   width: 60%;
 }
 
-@media (max-width: 655px) {
-  .heroImageContact {
-    background-position-x: -1000px;
-  }
-  .heroImage {
-    background-position-x: -600;
-  }
-}
 @media (max-width: 1540px) {
   .heroImage .wrapperOne {
     padding: 200px 15px;
-    width: 75%;
+    width: 50%;
     min-height: 0;
   }
   h1 {
     font-size: 0.8rem;
+  }
+}
+@media (max-width: 655px) {
+  .heroImageContact {
+    background-position-x: -1000px;
+    min-height: 0;
+  }
+  .heroImage {
+    background-position-x: -600;
   }
 }
 .itemList {
@@ -825,7 +828,8 @@ nav a:hover:after {
     padding: 10px 0;
   }
   .instagramImages img {
-    width: 40%;
+    width: 80%;
+    padding: 0;
   }
   .instagram {
     height: 100%;
@@ -835,15 +839,16 @@ nav a:hover:after {
   }
 }
 .form {
-  height: 60vh;
+  height: 100%;
 }
 
 fieldset {
   border: none;
-  height: 60vh;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 65px 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -995,7 +1000,7 @@ footer .about {
   margin-top: 25px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1515px) {
   footer .wrapper {
     width: 100%;
   }
