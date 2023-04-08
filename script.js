@@ -24,3 +24,19 @@
         navMenu.classList.toggle("active");
     }
 
+//PSEUDO CODE for form (error handling)
+// First, we need to go get the form from the page (using .querySelector).
+
+// Then, we attach an event listener to that form that listens for the submit event.
+
+
+// When the user submits the form:
+    // Prevent the default browser behavior on a submit event (which would cause the page to refresh, resetting our app).
+    // Find out what the user inputed on our form. 
+        // make all input lower case for less user error.
+    // somehow make sure that the email section has the @ value to confirm email structure.
+    // save the input as an variable for backend access in the future. (concatenation??)
+
+
+
+// alert the user that the form has been submitted and will get in contact shortly.
