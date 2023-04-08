@@ -9,25 +9,35 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
     <title>NOVAS Boutique Shop</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/sass/style.css">
 </head>
 
 <body>
-    <header>
-        <div class="fullwrapper">
-            <nav class="navigation">
-                <img src="./assets/logo-black.png" alt="NOVAS Logo">
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="./contact.html">Contact Us</a></li>
-                </ul>
-                <img class="logo" src="./assets/icons/shopping-cart-black-icon.png" alt="shopping bag icon">
-            </nav>
-            <div class="heroImageContact">
-                <div class="wrapper wrapperPadding">
-                    <h1>Contact Us</h1>
-                </div>
+    <header class="header">
+        <nav class="navigation">
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <img class="hideFive" src="./assets/logo-black.png" alt="NOVAS Logo">
+            <ul class="navMenu">
+                <li class="navItem">
+                    <a class="navLink" href="./index.html">Home</a>
+                </li>
+                <li class="navItem">
+                    <a class="navLink" href="#">Blog</a>
+                </li>
+                <li class="navItem">
+                    <a class="navLink" href="./contact.html">Contact Us</a>
+                </li>
+            </ul>
+            <img class="logo" src="./assets/icons/shopping-cart-black-icon.png" alt="shopping bag icon">
+        </nav>
+
+        <div class="heroImageContact">
+            <div class="wrapper wrapperPadding">
+                <h1>Contact Us</h1>
             </div>
         </div>
     </header>
@@ -98,6 +108,7 @@
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>

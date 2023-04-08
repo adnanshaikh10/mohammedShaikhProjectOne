@@ -13,7 +13,7 @@ nav {
 
 .navigation ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .navigation ul a {
@@ -39,6 +39,19 @@ nav a:hover:after {
     border-bottom: 3px solid variables.$thirdColor;
 }
 
+.navigation .hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
 @media(max-width: 655px) {
     .navigation ul {
     flex-direction: column;
@@ -49,12 +62,36 @@ nav a:hover:after {
         align-items: center;
     }
 
-    .navigation img {
-        width: 75px;
-    }
-
     .navigation .logo {
         width: 33px;
     }
 
+    .hideFive {
+        display: none;
+    }
+
+    .hideFour {
+        display: block;
+    }
+
+    .navMenu {
+        position: fixed;
+        left: -100%;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .navMenu.active {
+        left: 0;
+    }
+
+    .navigation .hamburger {
+        display: block;
+        cursor: pointer;
+        z-index: 10;
+    }
+    
 }
