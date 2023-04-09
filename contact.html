@@ -46,16 +46,22 @@
             <fieldset>
                 <form class="contact" action="contact">
                     <label for="fullName"></label>
-                    <input type="text" id="fullName" name="fullName" required="true" placeholder="Your Name">
+                    <!-- searched up how to add a pattern for html5 requiring a full name. (stack overflow) 
+                    https://stackoverflow.com/questions/52826233/html5-pattern-for-fullname-->
+                    <input type="text" id="fullName" name="fullName" required="true" placeholder="Your Name" pattern="^(\w\w+)\s(\w+)$">
 
                     <label for="email"></label>
-                    <input type="text" id="email" name="email" required="true" placeholder="Your Email">
+                    <!-- searched up how to add a pattern for html5 requiring a email format. (geeksforgeeks.org) 
+                    https://www.geeksforgeeks.org/write-regular-expressions/-->
+                    <input type="text" id="email" name="email" required="true" placeholder="Your Email" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$">
 
                     <label for="message"></label>
-                    <textarea type="text" id="message" name="message" required="true" placeholder="Your Message"
+                    <!-- used the default string "hello, item still available?" to set a min length -->
+                    <textarea type="text" id="message" name="message" required="true" placeholder="Your Message" maxlength="200" minlength="25"
                         class="messageTwo"></textarea>
 
                     <button>Submit</button>
+                    <p class="confirmation"></p>
                 </form>
             </fieldset>
         </div>
