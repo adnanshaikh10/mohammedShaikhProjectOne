@@ -338,7 +338,9 @@ nav a:hover:after {
     transition: 0.3s;
   }
   .navMenu.active {
+    position: relative;
     left: 0;
+    display: block;
   }
   .navigation .hamburger {
     display: block;

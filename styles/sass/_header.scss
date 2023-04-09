@@ -85,7 +85,9 @@ nav a:hover:after {
     }
 
     .navMenu.active {
+        position: relative;
         left: 0;
+        display: block;
     }
 
     .navigation .hamburger {
