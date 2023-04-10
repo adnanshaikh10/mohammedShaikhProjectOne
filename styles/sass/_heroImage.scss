@@ -1,7 +1,7 @@
 @use "variables";
 
 .heroImage {
-    background-image: url(../../assets/home.jpg);
+    background-image: url(../assets/home.jpg);
     background-size: cover;
 	background-repeat: no-repeat;
     background-position: center;
@@ -37,7 +37,7 @@
 // Contact page //
 
 .heroImageContact {
-    background-image: url(../../assets/contact-us.jpg);    
+    background-image: url(../assets/contact-us.jpg);    
     background-size: cover;
     background-position: center;
 	background-repeat: no-repeat;
